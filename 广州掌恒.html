@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+            *{
+            	margin:0;
+            	padding: 0;
+            }
+            body,html{
+            	 font-size: 10px;
+            }
+			.banner{
+				width: 100%;	
+				height: 65px;
+				background-color:rgba(0,0,0,0.5);
+				
+				display:flex;
+			    justify-content: space-around;
+			    position: fixed;
+			}
+			.banner_left{
+				height: 65px;
+				display: flex;
+				align-items: center;
+				padding-left: 10%;
+			}
+			
+			.banner_right{
+				display:flex;
+				padding-right: 10%;
+				align-items: center;
+			}
+			.banner_right div{
+				display: flex;
+				align-items: center;
+				padding: 0 10px;
+				border-right: 1px solid white;
+				height:50% ;
+			}
+			.banner_right div a {
+				text-decoration: none;
+				color: white;
+				font-size: 1.5rem;
+			}
+			.banner_right div a:hover{
+				color: #02c0e9;
+			}
+			.banner2{
+				width: 80%;
+				margin: 0 auto;
+				z-index: -1;
+			}
+			.banner2 img{
+				width: 100%;
+			}
+			.stzs{
+				width: 80%;
+				margin: 0 auto;
+				padding: 3% 0;
+			}
+			.stzs_top{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				
+			}
+			.stzs_bottom{
+				width: 65%;
+				margin: 3% auto;
+				display: flex;
+				justify-content: space-between;
+				
+			}
+			.stzs_bottom p{
+				color: #666;
+				font-size: 2rem;
+				margin-top: 5%;
+			}
+			.stzs_bottom span{
+				display: block;
+				color: #666;	
+				font-size: 1.3rem;
+				margin-top: 15%;
+				text-align: center;
+			}
+			.icon1,.icon2,.icon3,.icon4{
+				width: 21%;
+				
+			}
+			.icon1_top{
+				height: 140px;
+				position: relative;
+				display: flex;
+				justify-content: center;
+			}
+			.icon1_top p{
+				position: absolute;
+				bottom: 0;
+			}
+			.icon1_top a {
+				display: block;
+				width: 92px;
+				height: 106px;
+				text-align: center;
+				text-decoration: none;
+				background-image: url(img/icon1.png);
+				transition: all 1s;
+			}
+			.icon1_top a:hover{
+				background-image: url(img/icon1hover.png);
+			}
+			
+			/*icon2*/
+			.icon2_top{
+				
+				height: 140px;
+				position: relative;
+				display: flex;
+				justify-content: center;
+			}
+			.icon2_top p{
+				position: absolute;
+				bottom: 0;
+			}
+			.icon2_top a {
+				display: block;
+				width: 92px;
+				height: 106px;
+				text-align: center;
+				text-decoration: none;
+				background-image: url(img/icon2.png);
+				transition: all 1s;
+			}
+			.icon2_top a:hover{
+				background-image: url(img/icon2hover.png);
+			}
+			/*icon3*/
+			.icon3_top{
+				
+				height: 140px;
+				position: relative;
+				display: flex;
+				justify-content: center;
+			}
+			.icon3_top p{
+				position: absolute;
+				bottom: 0;
+			}
+			.icon3_top a {
+				display: block;
+				width: 92px;
+				height: 106px;
+				text-align: center;
+				text-decoration: none;
+				background-image: url(img/icon3.png);
+				transition: all 1s;
+			}
+			.icon3_top a:hover{
+				background-image: url(img/icon3hover.png);
+			}
+			/*icon4*/
+			.icon4_top{
+			
+				height: 140px;
+				position: relative;
+				display: flex;
+				justify-content: center;
+			}
+			.icon4_top p{
+				position: absolute;
+				bottom: 0;
+			}
+			.icon4_top a {
+				display: block;
+				width: 92px;
+				height: 106px;
+				text-align: center;
+				text-decoration: none;
+				background-image: url(img/icon4.png);
+				transition: all 1s;
+			}
+			.icon4_top a:hover{
+				background-image: url(img/icon4hover.png);
+			}
+			.middle{
+				width: 80%;
+				margin: 0 auto;
+			}
+			.middle img{
+				width: 100%;
+			}
+			/*arzs*/
+			.arzp{
+				width: 80%;
+				margin: 0 auto;
+				padding: 3% 0;
+			}
+			.gyzh{
+				width: 80%;
+				margin: 0 auto;
+				text-align: center;
+				margin-bottom: 3%;
+			}
+			.arzp_top{
+				width: 100%;
+				display: flex;
+				justify-content: center;	
+		         	}
+		    .arzp_bottom{
+		    	width: 985px;
+		    	height: 410px;
+		   
+		    	margin: 0 auto;
+		    }
+		    .arzp_bottom_left{
+		    	  width: 580px;
+		    	  height: 410px;
+		    
+		    	 position: relative;
+		    }
+		    .arzp_bottom_left_top{
+		    	display: flex;
+		    	justify-content: space-between;
+		  
+		    }
+		    .arzp_bottom_left_down{
+		    	display: flex;
+		    	justify-content: space-between; 
+		    	margin-top: 14px;   
+		    }
+		    .arzp_bottom_left_top div img,.arzp_bottom_left_down div img{
+		    	width: 100%;
+		    }
+		    .L1{
+           	position: relative;
+           }
+           .L1 p{
+           	width: 205px;
+           	height: 30px;
+           	line-height: 30px;
+           	font-size: 1.5rem;
+           	background-color: rgba(0,0,0,0.4);
+           	position: absolute;
+           	color: white;
+           	bottom: 0;
+           	text-align: center;
+           	visibility: hidden;
+           	
+           }
+           .L1:hover p{
+           	  visibility: visible;  	
+           }
+           
+            .L2{
+           	position: relative;
+           }
+           .L2 p{
+           	width: 365px;
+           	height: 30px;
+           	line-height: 30px;
+           	font-size: 1.5rem;
+           	background-color: rgba(0,0,0,0.4);
+           	position: absolute;
+           	color: white;
+           	bottom: 0;
+           	text-align: center;
+           	visibility: hidden;
+           	
+           }
+           .L2:hover p{
+           	  visibility: visible;  	
+           }
+           .L3{
+           	position: relative;
+           }
+           .L3 p{
+           	width: 284px;
+           	height: 30px;
+           	font-size: 1.5rem;
+           	background-color: rgba(0,0,0,0.4);
+           	position: absolute;
+           	color: white;
+           	bottom: 0;
+           	text-align: center;
+           	line-height: 30px;
+           	visibility: hidden;
+           	
+           }
+           .L3:hover p{
+           	  visibility: visible;  	
+           }
+           .L4{
+           	position: relative;
+           }
+           .L4 p{
+           	width: 284px;
+           	height: 30px;
+           	font-size: 1.5rem;
+           	background-color: rgba(0,0,0,0.4);
+           	position: absolute;
+           	color: white;
+           	bottom: 0;
+           	text-align: center;
+           	line-height: 30px;
+           	visibility: hidden;
+           	
+           }
+           .L4:hover p{
+           	  visibility: visible;  	
+           }
+           .arzp_bottom{
+           	display: flex;
+           }
+           
+           .arzp_bottom_right_head img{
+           	width: 100%;
+           }
+           .arzp_bottom_right_bottom_left img{
+           	width: 100%;
+           }
+           .arzp_bottom_right{
+           	width:400px ;
+        
+           	overflow: hidden;  
+           	margin-left: 10px; 
+           }
+           .arzp_bottom_right_bottom{
+           	margin-top: 10px;
+           	display: flex;
+           	justify-content:space-between;
+           }
+           .arzp_bottom_right_bottom_right{
+           width:191px;
+           height:241px;
+           background-color:gainsboro;  
+           }
+           .arzp_bottom_right_bottom_right a {
+           	display: block;
+           	width: 191px;
+           	height: 241px;
+           	text-align: center;
+           	line-height: 241px;
+           }
+           .arzp_bottom_right_bottom_right:hover{
+           	background-color: gray;
+           }
+          .arzp_top{
+          	   margin-bottom: 3%;
+          }
+          
+           .arzp_bottom_right_head{
+           	position: relative;
+           }
+           .arzp_bottom_right_head p{
+           	width: 394px;
+           	height: 30px;
+           	font-size: 1.5rem;
+           	background-color: rgba(0,0,0,0.4);
+           	position: absolute;
+           	color: white;
+           	bottom: 0;
+           	text-align: center;
+           	line-height: 30px;
+           	visibility: hidden;
+           }
+           .arzp_bottom_right_head:hover p{
+           	  visibility: visible;  	
+           }
+          
+             .arzp_bottom_right_bottom_left{
+           	position: relative;
+           }
+            .arzp_bottom_right_bottom_left p{
+           	width:195px;
+           	height: 30px;
+           	font-size: 1.5rem;
+           	background-color: rgba(0,0,0,0.4);
+           	position: absolute;
+           	color: white;
+           	bottom: 0;
+           	text-align: center;
+           	line-height: 30px;
+           	visibility: hidden;
+           }
+            .arzp_bottom_right_bottom_left:hover p{
+           	  visibility: visible;  	
+           }
+           /*bottom*/
+          .bottom{
+          	width: 80%;
+          	margin: 0 auto;
+          	background-color: red;
+          }
+          .bottom_head{
+          	width: 100%;
+          	height: 170px;;
+            background-image: url(img/bottom.jpg);
+          	overflow: hidden;
+          	display: flex;
+          	align-items: center;
+       
+         
+          }
+          .bottom_bottom{
+          	width: 100%;
+          	background-color: black;
+          }
+          .bottom_head ul{
+          	width: 60%;
+          	margin: 0 auto;  
+          		
+          }
+          .bottom_head ul li{
+          	float: left;
+          	list-style: none;
+          	width: 25%;
+          }
+          .details{
+          	font-size: 1.2rem;
+          	color: white;
+          	height: 22px;
+          }
+          .title{
+          	font-size: 1.6rem;
+          	color: white;
+          	height: 30px;
+          }
+          .bottom_bottom{
+          	text-align: center;
+          }
+          .bottom_bottom div{
+          	color: white;
+          	height: 20px;
+          	line-height: 20px;
+          }
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<div class="banner_left">
+				<img src="img/1.png" alt="" />
+			</div>
+			<div class="banner_right">		
+					<div><a href="广州掌恒.html">Home</a></div>
+					<div><a href="公司简介.html">Abilities</a></div>
+					<div><a href="加入掌恒.html">Portfolio</a></div>
+					<div><a href="神通展示.html">About</a></div>		
+			</div>
+		</div>
+		<div class="banner2">
+			<img src="img/pic_1.jpg" alt="" />		
+		</div>
+		<div class="stzs">
+			<div class="stzs_top">
+				<img src="img/stzs.png" alt="" />
+			</div>
+			<div class="stzs_bottom">
+				<div class="icon1">
+					<div class="icon1_top">
+						<a href="">	<p>新媒体营销</p></a>	
+					</div>
+					<div class="icon1_bottom">
+						<span>企业微信代运营、微信二次开发、微信活动策划及推广、无线广告推广</span>
+					</div>
+				</div>
+				<div class="icon2">
+					<div class="icon2_top">
+						<a href="">	<p>新媒体营销</p></a>	
+					</div>
+					<div class="icon2_bottom">
+						<span>企业微信代运营、微信二次开发、微信活动策划及推广、无线广告推广</span>
+					</div>
+				</div>
+				<div class="icon3">
+					<div class="icon3_top">
+						<a href="">	<p>新媒体营销</p></a>	
+					</div>
+					<div class="icon3_bottom">
+						<span>企业微信代运营、微信二次开发、微信活动策划及推广、无线广告推广</span>
+					</div>
+				</div>
+				<div class="icon4">
+					<div class="icon4_top">
+						<a href="">	<p>新媒体营销</p></a>	
+					</div>
+					<div class="icon4_bottom">
+						<span>企业微信代运营、微信二次开发、微信活动策划及推广、无线广告推广</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="middle">
+			<img src="img/Z.jpg" alt="" />
+		</div>
+<div class="arzp">
+	<div class="arzp_top">
+		<img src="img/arzp.png" alt="" />
+	</div>
+	<div class="arzp_bottom">
+		<div class="arzp_bottom_left">
+			<div class="arzp_bottom_left_top">
+				<div style="width: 205px;height: 225px;" class="L1">
+					<a href=""><img src="img/L1.jpg" alt="" /></a>
+					<p >长安汽车</p>
+				</div>
+				<div style="width: 365px;height: 225px;overflow: hidden;" class="L2">
+					<a href=""><img src="img/L2.jpg" alt="" /></a>
+					<p>英菲尼迪--Q50L</p>
+				</div>
+			</div>
+			<div class="arzp_bottom_left_down">
+				<div style="width: 284px;height: 171px;" class="L3">
+					<a href=""><img src="img/L3.jpg" alt="" /></a>
+					<p >进口大众</p>
+				</div>
+				<div style="width: 284px;height: 171px;"class="L4">
+					<a href=""><img src="img/L4.jpg" alt="" /></a>
+					<p>酷派--风尚手机</p>	
+				</div>
+			</div>
+		</div>
+		<div class="arzp_bottom_right">
+			<div class="arzp_bottom_right_head"style="width: 394px;height: 170px;">
+				<a href=""><img src="img/R1.jpg" alt="" /></a>
+				<p>英菲尼迪--Q70L</p>
+			</div>
+			
+			<div class="arzp_bottom_right_bottom">
+				
+				<div class="arzp_bottom_right_bottom_left" style="width: 195px;height: 241px;">
+					<a href=""><img src="img/R2.jpg" alt="" /></a>
+					<p>华硕</p>
+				</div>
+				<div class="arzp_bottom_right_bottom_right">
+					<a href=""><img src="img/MORE.png" alt=""/></a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+    <div class="gyzh">
+		<img src="img/gyzh.png" alt="" />
+	</div>
+	<div class="bottom">
+		<div class="bottom_head">
+			<ul>
+				<li>
+					<div class="title">公司地址:</div>
+					<div class="details">广州市天河区天河路518号</div>
+					<div class="details">南方数码都荟22层</div>
+				</li>
+				<li>
+					<div class="title">服务电话:</div>
+					<div class="details">Tel：020-37601080</div>
+					<div class="details">24小时热线：18898400908</div>
+				</li>
+				<li>
+					<div class="title">关注掌恒:</div>
+					<div class="details">微信号：palm-h</div>
+				</li>
+				<li>
+					<div class="title">企业邮箱:</div>
+					<div class="details">contact@palm-h.com</div>
+				</li>
+			</ul>
+		</div>
+		<div class="bottom_bottom">
+			<div >网站建设版权所有©2010-2015广州掌恒信息技术有限公司</div>
+			<div >Copyright©2010-2015 Palm-h Tech All Rights Reserved. 粤ICP备15050441号-1</div>
+			
+		</div>
+	</div>
+	
+	</body>
+</html>
