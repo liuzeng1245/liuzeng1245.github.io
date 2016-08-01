@@ -1,0 +1,121 @@
+html,
+body {
+	width: 100%;
+	/*height: 100%;*/
+	/*min-width: 320px;*/
+	/*max-width: 1366px;*/
+	margin: 0 auto;
+}
+p,dd,span{font-family: arial;}
+
+img{width: 100%;}
+a{-webkit-tap-highlight-color:transparent;}
+
+.j_contact_us{
+	width: 100%;
+	/*height: 25.53%;*/
+	/*height: 100%;*/
+}
+/*.line_title {
+	padding-top: 70px;
+	padding-bottom: 85px;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+.line_title i {
+	display: inline-block;
+	background: url(../img/line_yellow.png) no-repeat;
+	margin-bottom: 0.7em;
+	height: 2px;
+	overflow: hidden;
+	width: 25.53%;
+}*/
+.line_title span {
+	color: #616161;
+	font-family: arial;
+	padding-left: 3%;
+	margin-right: 3%;
+	font-size: 1.625em;
+	font-weight: bold;
+}
+.line_title{
+	/*padding-top: 50px;
+	padding-bottom: 65px;*/
+	margin: 0 auto;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 8%;
+}
+.line_title i{
+	display: inline-block;
+	background:url("../img/line_yellow.png"); 
+	margin-bottom: 1.5%;
+	width: 22%;
+	max-width: 140px;
+	height: 2px;
+	overflow: hidden;
+}
+/*.line_title span{
+	color: #616161;
+	font-size: 1.9em;
+	padding-left: 5%;
+	margin-right: 5%;
+	font-family: arial;
+}*/
+/*滚到顶部*/
+.z_top{
+	width: 5%;
+	position: absolute;
+	bottom: 0;
+	/*left: 48%\0;*/
+	margin-left: -2.5%;
+	left: 50%;
+	cursor: pointer;
+	z-index: 100;
+}
+.z_top a{-webkit-tap-highlight-color:transparent;}
+.z_top img{
+	width: 100%;
+	display: block;
+}
+#foot{
+	overflow: hidden;
+}
+@media only screen and (max-width: 640px) {
+	.line_title>span {font-size: 1.2em;}
+	.line_title>i{margin-bottom: 0.45em;}
+	.z_top{width: 15%;display: none;}
+	.j_tel>span{display: block;}
+	.line_title {
+		width:80%;
+		padding-top: 11.19%;
+   		padding-bottom: 12.88%;
+	}
+	.line_title>i{width: 18%;}
+	.j_contact_us .j_contact_us_list {
+	padding-bottom: 3em;
+	}
+}
+/*@media only screen and (min-width: 641px) {
+	.line_title>i{width: 18%;}
+	.line_title {
+		width:70%;
+		}
+}
+@media only screen and (min-width: 768px) {
+	.line_title>i{width: 18%;}
+	.line_title {
+		width:70%;
+		}
+}*/
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+	.line_title {
+		padding-top: 8.19%;
+		padding-bottom: 10.88%;
+	}
+	.line_title>i{width: 15%;}
+	.j_contact_us_list {
+	padding-bottom: 5em;
+	}
+}

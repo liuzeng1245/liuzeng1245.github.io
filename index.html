@@ -1,64 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<style type="text/css">
-			body{
-				background-color: #ccc;
-			}
-			#cvs{
-				box-shadow: 0 0 20px black;
-				display: block;
-				margin: 20px auto;
-			}
-		</style>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="utf-8" />
+		<title>Shining for English</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+
 	<body>
-		<canvas id="cvs" width="800" height="800"></canvas>
+		<div id="wrap">
+			<!--头部-->
+			<div id="head">
+				<!--导航栏-->
+<ul class="j_nav">
+	<li class="j_nativ_logo"><div class="logo_wrap">
+		<a href="###"><img src="img/shininglogo.png"alt="写意集团"/></a>
+	</div></li>
+	<input type="button" name="buttonnav" id="buttonnav" value="" />
+	<ul  class="j_nativ_list">
+		<li  class="j_nativ_list1 j_nativ_listgreen"></li>
+		<li  class="j_nativ_list1"></li>
+		<li  class="j_nativ_list1"></li>
+		<li  class="j_nativ_list1"></li>
+		<li  class="j_nativ_list1"></li>
+		<li  class="j_nativ_list1"></li>
+	</ul>
+	<ul  class="j_nativ_list">
+		<li  class="j_nativ_list1 j_nativ_listgreen"><a href="index.html">Home</a></li>
+		<li  class="j_nativ_list1"><a href="html/about.html">About</a></li>
+		<li  class="j_nativ_list1"><a href="html/drawing.html">Renderings</a></li>
+		<li  class="j_nativ_list1"><a href="html/bim.html">BIM</a></li>
+		<li  class="j_nativ_list1"><a href="html/3Danimate.html">3D Animat</a></li>
+		<li  class="j_nativ_list1"><a href="html/contact_us.html">Contact</a></li>
+	</ul>
+</ul>
+			</div>
+			<!--our service-->
+			<div class="j_index_content">
+				<div class="line_title">
+					<i class="line_title_l"></i>
+					<span>OUR SERVICE</span>
+					<i class="line_title_r"></i>
+				</div>
+				<div class="j_ourservice">
+					<ul class="j_ourservice_list">
+						<li class="j_ourservice_list_img"><a href="###"><img src="img/en_a1.jpg" /><img src="img/en_a2.jpg" /></a></li>
+						<li class="j_ourservice_list_column"></li>
+						<li class="j_ourservice_list_text">
+							<h6>Digital Effect Drawing</h6>
+							<p>Nosape eaqui non nobitati te ommos deria nos quatur? Pario comnit reris aut modic tecuptat omni ad explanditam verupis nia sequist la et liquo omnia </p>
+						</li>
+					</ul>
+					<ul class="j_ourservice_list">
+						<li class="j_ourservice_list_img"><a href="###"><img src="img/en_b1.jpg" /><img src="img/en_b2.jpg" /></a></li>
+						<li class="j_ourservice_list_column"></li>
+						<li class="j_ourservice_list_text">
+							<h6>Building Information Modeling</h6>
+							<p>Nosape eaqui non nobitati te ommos deria nos quatur? Pario comnit reris aut modic tecuptat omni ad explanditam verupis nia sequist la et liquo omnia</p>
+						</li>
+					</ul>
+					<ul class="j_ourservice_list">
+						<li class="j_ourservice_list_img"><a href="###"><img src="img/en_c1.jpg" /><img src="img/en_c2.jpg" /></a></li>
+						<li class="j_ourservice_list_column"></li>
+						<li class="j_ourservice_list_text">
+							<h6>3D Animate</h6>
+							<p>Nosape eaqui non nobitati te ommos deria nos quatur? Pario comnit reris aut modic tecuptat omni ad explanditam verupis nia sequist la et liquo omnia</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--底部-->
+			<div id="foot">
+				<!--CONTACT US-->
+				<div class="j_contact_us">
+					<div class="line_title">
+						<i></i>
+						<span>CONTACT US</span>
+						<i></i>
+					</div>
+					<ul class="j_contact_us_list">
+						<li class="j_email">Email：eric@shining365.com</li>
+						<li class="j_mobilephone">Mobile Phone：86 138 1690 3400</li>
+						<li class="j_tel"><span>Tel：+86 21 6598 6866-304</span><span> +86 21 6598 3188-304</span></li>
+					</ul>
+				</div>
+				<div class="j_footer">
+					<span class="j_copyright">
+	Copyright © 1998-2015 shining Group
+	</span>
+				</div>
+			</div>
+
+		</div>
 	</body>
-	<script type="text/javascript">
-		var cancvs = document.getElementById("cvs");
-		var cvs = cancvs.getContext('2d');
-		var arr = ['red','brown','yellow','yellowgreen','green','greenyellow','blue','darkblue'],r=0;
-		function round(){
-			r+=2;
-			cvs.clearRect(0,0,800,800);
-		for(var i =0;i<4;i++){
-			cvs.save();
-			cvs.beginPath();
-			cvs.translate(400,360);
-			cvs.rotate(Math.PI/180*(90*i+r));
-			//中心原点
-			cvs.fillStyle = 'white';
-			cvs.arc(0,0,20,0,Math.PI*2);
-			cvs.fill();
-//			散叶 里叶
-			cvs.moveTo(0,0);
-			cvs.quadraticCurveTo(200,150,0,350);
-			cvs.closePath();
-			cvs.fillStyle = arr[i+1];
-			cvs.fill();
-			//外叶
-			cvs.moveTo(0,0);
-			cvs.lineTo(0,350);
-			cvs.quadraticCurveTo(120,240,140,0);
-			cvs.lineTo(140,0);
-			cvs.closePath();
-			cvs.fillStyle = arr[i];
-			cvs.fill();
-			cvs.restore();
-		}
-			//画手柄;
-			cvs.globalCompositeOperation = "destination-over";
-			cvs.beginPath();
-			cvs.moveTo(400,360);
-			cvs.strokeStyle = 'white';
-			cvs.lineWidth = 20;
-			cvs.lineTo(400,800);
-			cvs.stroke();
-			window.requestAnimationFrame(round);
-		}
-		window.requestAnimationFrame(round);
-	</script>
-</html>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+</html>z

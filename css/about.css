@@ -1,0 +1,11 @@
+body{width: 100%;}
+
+.j_content{padding-top: 90px;text-align: center;background-color: #f5f5f5;}
+.j_content>.j_content_img{/*text-align: center;*/margin: 0 auto;width: 80%;}
+.j_content>div>img{width: 100%;max-width: 400px;}
+.j_content_text{width:54.5%;margin: 0 auto;padding-top: 35px;text-align: left;text-indent: 2em;}
+.j_content_text p{padding-bottom: 3.125em;line-height: 2em;font-size: 1em;word-break: break-all;font-weight: lighter;}
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+	.j_content>.j_content_text{width: 95%;word-break: break-all;}
+	
+}
